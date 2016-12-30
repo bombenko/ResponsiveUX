@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.page {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  min-width: 1240px;
+}
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.header {
+  padding: 18px 0px 20px;
+  border-bottom: 5px solid #fad027;
+}
+.banner {
+  background-color: #0091be;
+  padding: 65px 0 45px;
+  text-align: center;
+}
+.banner__image {
+  vertical-align: middle;
+  margin-right: 40px;
+}
+.banner__caption {
+  line-height: 1.5;
+  vertical-align: middle;
+  text-align: left;
+  display: inline-block;
+  font-size: 46px;
+  font-style: italic;
+  color: #fff;
+  width: 442px;
+}
+.section {
+  margin-top: 49px;
+}
+.section__title {
+  font-size: 35px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 45px;
+}
+.about__description {
+  float: left;
+  width: 562px;
+  padding-left: 2px;
+  line-height: 2.3;
+}
+.about__skills {
+  float: right;
+}
+.skill {
+  margin-bottom: 26px;
+}
+.skill:last-child {
+  margin-bottom: 0px;
+}
+.skill__title {
+  font-size: inherit;
+  margin-bottom: 13px;
+}
+.skill__bar {
+  width: 590px;
+  height: 30px;
+  background-color: #eee;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.skill__value {
+  text-indent: -9999px;
+  height: inherit;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.skill__value_blue {
+  background-color: #0091be;
+}
+.skill__value_green {
+  background-color: #40c95d;
+}
+.skill__value_yellow {
+  background-color: #d7d93f;
+}
+.skill__value_90pcnt {
+  width: 90%;
+}
+.skill__value_85pcnt {
+  width: 85%;
+}
+.skill__value_95pcnt {
+  width: 95%;
+}
+.menu {
+  float: right;
+  max-width: 600px;
+  padding-top: 12px;
+}
+.menu__link {
+  margin-right: 34px;
+}
+.menu__link:last-child {
+  margin-right: 0px;
+}
+.menu__link:hover {
+  color: #0091be;
+}
+.sitename {
+  float: left;
+  width: 175px;
+}
+.sitename__row {
+  display: block;
+}
+.sitename__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.3px;
+}
+.sitename__caption {
+  color: #0091be;
+}
