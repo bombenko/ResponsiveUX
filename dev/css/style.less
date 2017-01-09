@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+html{
+    font-size: 10px;
+}
+
 body{
 	font-family: Roboto,sans-serif;
     color: #000;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 a{
@@ -14,12 +18,19 @@ a{
     color: inherit;
 }
 
+@media screen and (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+}
+
+
+@import "variables.less";
 @import "helpers/clear.less";
-@import "layout/page.less";
 @import "layout/main-container.less";
 @import "layout/header.less";
-@import "layout/banner.less";
 @import "layout/section.less";
+@import "components/banner.less";
 @import "components/about.less";
 @import "components/skill.less";
 @import "components/menu.less";

@@ -1,5 +1,5 @@
 .skill{
-    margin-bottom: 26px;
+    margin-bottom: 1.625em;
     &:last-child{
         margin-bottom: 0px;
     }
@@ -7,15 +7,14 @@
 
 .skill__title{
     font-size: inherit;
-    margin-bottom: 13px;
+    margin-bottom: 0.8215em;
 }
 
 .skill__bar{
-    width: 590px;
-    height: 30px;
+    height: 1.875em;
     background-color: #eee;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0.3125em;
+    border-bottom-right-radius: 0.3125em;
 }
 
 .skill__value{
@@ -37,14 +36,20 @@
     background-color: #d7d93f;
 }
 
-.skill__value_90pcnt{
+.documentation-value{
     width: 90%;
 }
 
-.skill__value_85pcnt{
+.design-value{
     width: 85%;
 }
 
-.skill__value_95pcnt{
+.mobile-value{
     width: 95%;
+}
+
+@media screen and (max-width: 640px){
+    .skill__title{
+        text-align: center;
+    }
 }

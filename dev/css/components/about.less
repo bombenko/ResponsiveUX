@@ -1,10 +1,24 @@
 .about__description{
     float: left;
-    width: 562px;
-    padding-left: 2px;
+    width: 46.83333333333333%;
+    padding-left: 0.125em;
     line-height: 2.3;
 }
 
 .about__skills{
     float: right;
+    width: 49.16666666666667%;
+}
+
+@media screen and (max-width: 640px){
+    .about__description{
+        float: none;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .about__skills{
+        float: none;
+        width: 100%;
+    }
 }

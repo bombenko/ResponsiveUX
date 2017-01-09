@@ -2,17 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Responsive UX</title>
+        <title>ResponsiveUX</title>
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width,init-scale=1">
     </head>
     <body>
-        <div class="page">
-            <header class="header">
-                <div class="main-container clear">
-                    <a href="#" class="sitename">
-                        <h1 class="sitename__row sitename__title">Responsive UX</h1>
-                        <span class="sitename__row sitename__caption">template</span>
-                    </a>
+        <header class="header">
+            <div class="main-container clear">
+                <a href="#" class="sitename">
+                    <h1 class="sitename__row sitename__title">Responsive UX</h1>
+                    <span class="sitename__row sitename__caption">template</span>
+                </a>
+                <input type="checkbox" id="hamburger__toggle" class="hamburger__toggle">
+                <label for="hamburger__toggle" class="hamburger__label"></label>
+                <div class="hamburger clear">
                     <nav class="menu">
                         <a href="#" class="menu__link">About</a>
                         <a href="#" class="menu__link">Projects</a>
@@ -20,43 +23,43 @@
                         <a href="#" class="menu__link">Contacts</a>
                     </nav>
                 </div>
-            </header>
-            <div class="banner">
-                <div class="main-container">
-                    <img src="../images/html5.png" alt="html5" class="banner__image">
-                    <span class="banner__caption">I've seen the FUTURE<br>It's in my BROWSER</span>
-                </div>
             </div>
-            <section class="section about">
-                <div class="main-container">
-                    <h2 class="section__title">About</h2>
-                    <div class="section__content clear">
-                        <div class="about__description">
-                            <p>Responsive UX template-is the modern and responsive html a template. It was developed by means of Responsive framework. The template responds all the modern of the requirement. In case of creation were used next technologies were used: HTML5, CSS3. Also in it the responsive grid, css3 animation and many other components are included. It is prepared documentation is qualitative, which will help you to use it.</p>
+        </header>
+        <div class="banner">
+            <div class="main-container">
+                <img src="../images/html5.png" alt="html5" class="banner__image">
+                <span class="banner__caption">I've seen the FUTURE<br>It's in my BROWSER</span>
+            </div>
+        </div>
+        <section class="section about">
+            <div class="main-container">
+                <h2 class="section__title">About</h2>
+                <div class="section__content clear">
+                    <div class="about__description">
+                        <p>Responsive UX template-is the modern and responsive html a template. It was developed by means of Responsive framework. The template responds all the modern of the requirement. In case of creation were used next technologies were used: HTML5, CSS3. Also in it the responsive grid, css3 animation and many other components are included. It is prepared documentation is qualitative, which will help you to use it.</p>
+                    </div>
+                    <div class="about__skills">
+                        <div class="skill">
+                            <h3 class="skill__title">Documentation</h3>
+                            <div class="skill__bar">
+                                <div class="skill__value skill__value_blue documentation-value">90%</div>
+                            </div>
                         </div>
-                        <div class="about__skills">
-                            <div class="skill">
-                                <h3 class="skill__title">Documentation</h3>
-                                <div class="skill__bar">
-                                    <div class="skill__value skill__value_blue skill__value_90pcnt">90%</div>
-                                </div>
+                        <div class="skill">
+                            <h3 class="skill__title">Design</h3>
+                            <div class="skill__bar">
+                                <div class="skill__value skill__value_green design-value">85%</div>
                             </div>
-                            <div class="skill">
-                                <h3 class="skill__title">Design</h3>
-                                <div class="skill__bar">
-                                    <div class="skill__value skill__value_green skill__value_85pcnt">85%</div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <h3 class="skill__title">Mobile</h3>
-                                <div class="skill__bar">
-                                    <div class="skill__value skill__value_yellow skill__value_95pcnt">95%</div>
-                                </div>
+                        </div>
+                        <div class="skill">
+                            <h3 class="skill__title">Mobile</h3>
+                            <div class="skill__bar">
+                                <div class="skill__value skill__value_yellow mobile-value">95%</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </body>
 </html>

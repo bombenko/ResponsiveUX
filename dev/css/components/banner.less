@@ -1,0 +1,33 @@
+.banner{
+    min-width: 100%;
+    background-color: @main-color;
+    padding: 9.4375em 0 3em;
+    text-align: center;
+}
+
+.banner__image{
+    vertical-align: middle;
+    margin-right: 3.33333333%;
+}
+
+.banner__caption{
+    line-height: 1.5;
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    font-size: 4.6rem;
+    font-style: italic;
+    color: #fff;
+    width: 36.83333333333333%;
+}
+
+@media screen and (max-width: 768px){
+    .banner__image{
+        margin-right: 0;
+        margin-bottom: 1.25em;
+    }
+    .banner__caption{
+        width: 100%;
+        text-align: center;
+    }
+}
