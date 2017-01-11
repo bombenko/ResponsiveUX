@@ -9,20 +9,20 @@
     <body>
         <header class="header">
             <div class="main-container clear">
-                <a href="#" class="logo">
+                <div href="#" class="logo">
                     <h1 class="logo__title">Responsive UX</h1>
                     <span class="logo__caption">template</span>
-                </a>
-                <input type="checkbox" id="hamburger__toggle" class="hamburger__toggle">
-                <label for="hamburger__toggle" class="hamburger__label"></label>
-                <div class="hamburger clear">
-                    <nav class="menu">
-                        <a href="#" class="menu__link">About</a>
-                        <a href="#" class="menu__link">Projects</a>
-                        <a href="#" class="menu__link">Blog</a>
-                        <a href="#" class="menu__link">Contacts</a>
-                    </nav>
                 </div>
+                <nav class="menu hamburger clear">
+                    <input type="checkbox" id="hamburger__toggle" class="hamburger__toggle">
+                    <label for="hamburger__toggle" class="hamburger__label"></label>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="#" class="menu__link">About</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__link">Projects</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__link">Blog</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <div class="banner">
