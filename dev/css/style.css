@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 10px;
-}
 body {
   font-family: Roboto, sans-serif;
   color: #000;
@@ -13,6 +10,11 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -38,11 +40,15 @@ a {
   margin: auto;
 }
 .header {
-  position: fixed;
   padding: 1.1875em 0 1.25em;
   border-bottom: 0.3125em solid #fad027;
   background-color: #fff;
   min-width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .header {
+    position: fixed;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -67,26 +73,33 @@ a {
 .banner {
   min-width: 100%;
   background-color: #0091be;
-  padding: 9.4375em 0 3em;
   text-align: center;
 }
 .banner__image {
   vertical-align: middle;
-  margin-right: 3.33333333%;
 }
 .banner__caption {
-  line-height: 1.5;
+  line-height: 1.75;
   vertical-align: middle;
-  text-align: left;
   display: inline-block;
   font-size: 4.6rem;
   font-style: italic;
   color: #fff;
-  width: 36.83333333333333%;
+}
+@media screen and (min-width: 769px) {
+  .banner {
+    padding: 9.4375em 0 3em;
+  }
+  .banner__image {
+    margin-right: 3.33333333%;
+  }
+  .banner__caption {
+    text-align: left;
+  }
 }
 @media screen and (max-width: 768px) {
   .banner {
-    padding-top: 3.875em;
+    padding: 3.875em 0 3em;
   }
   .banner__image {
     margin-right: 0;
@@ -98,14 +111,18 @@ a {
   }
 }
 .about__description {
-  float: left;
-  width: 46.83333333333333%;
   padding-left: 0.125em;
   line-height: 2.3;
 }
-.about__skills {
-  float: right;
-  width: 49.16666666666667%;
+@media screen and (min-width: 641px) {
+  .about__description {
+    float: left;
+    width: 46.83333333333333%;
+  }
+  .about__skills {
+    float: right;
+    width: 49.16666666666667%;
+  }
 }
 @media screen and (max-width: 640px) {
   .about__description {
@@ -125,18 +142,16 @@ a {
   margin-bottom: 0px;
 }
 .skill__title {
-  font-size: inherit;
+  font-size: 1em;
   margin-bottom: 0.8215em;
 }
 .skill__bar {
-  height: 1.875em;
   background-color: #eee;
   border-top-right-radius: 0.3125em;
   border-bottom-right-radius: 0.3125em;
 }
 .skill__value {
-  text-indent: -9999px;
-  height: inherit;
+  height: 1.875em;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
@@ -158,9 +173,20 @@ a {
 .mobile-value {
   width: 95%;
 }
+@media screen and (min-width: 641px) {
+  .skill__value {
+    text-indent: -9999px;
+  }
+}
 @media screen and (max-width: 640px) {
   .skill__title {
     text-align: center;
+  }
+  .skill__value {
+    text-shadow: #000 0px 0px 4px;
+    color: #fff;
+    text-indent: 48%;
+    line-height: 1.875em;
   }
 }
 .hamburger-toggle {
@@ -196,7 +222,6 @@ a {
   border-bottom: 0.8rem solid;
   border-top: 0.8rem solid;
   border-color: #0091be;
-  display: none;
 }
 .hamburger:after {
   content: "";
@@ -206,6 +231,14 @@ a {
   width: 100%;
   border-top: 0.8rem solid;
   border-color: inherit;
+}
+@media screen and (min-width: 641px) {
+  .menu__list {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
 }
 @media screen and (max-width: 640px) {
   .menu__list {
