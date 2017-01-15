@@ -1,0 +1,29 @@
+.project{
+    display: inline-block;
+    width: 24%;
+    margin-right: 0.75em;
+    margin-bottom: 1.25em;
+    &:nth-child(4n){
+        margin-right: 0;
+    }
+}
+
+.project__img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1220px){
+    .project{
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .project{
+        width: 47%;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @skillbar-height: 1.875em;
 
 .skill{
-    margin-bottom: 1.625em;
+    margin-bottom: 1.6875em;
     &:last-child{
         margin-bottom: 0px;
     }
@@ -19,6 +19,7 @@
 }
 
 .skill__value{
+    text-indent: -9999px;
     height: @skillbar-height;
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
@@ -46,12 +47,6 @@
 
 .mobile-value{
     width: 95%;
-}
-
-@media screen and (min-width: 641px){
-    .skill__value{
-        text-indent: -9999px;
-    }
 }
 
 @media screen and (max-width: 640px){

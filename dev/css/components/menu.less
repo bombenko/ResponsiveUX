@@ -1,3 +1,24 @@
+.menu__list{
+    display: block;
+    float: right;
+    list-style: none;
+    margin-top: 0.75em;
+}
+
+.menu__list-item{
+    display: inline-block;
+    margin-right: 3.4rem;
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.menu__link{
+    &:hover{
+        color: @main-color;
+    }
+}
+
 .hamburger-toggle {
     display: none;
     &:checked ~ .menu__list{
@@ -25,6 +46,7 @@
 @hamburger-icon-height: .8rem;
 
 .hamburger {
+    display: none;
     margin-top: 0.3em;
     float: right;
     height: 1em;
@@ -45,40 +67,11 @@
     }
 }
 
-@media screen and (min-width: 641px){
-    .menu__list{
-        display: block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 640px){
     .menu__list{
         display: none;
     }
     .hamburger{
         display: block;
-    }
-}
-
-.menu__list{
-    float: right;
-    list-style: none;
-    margin-top: 0.75em;
-}
-
-.menu__list-item{
-    display: inline-block;
-    margin-right: 2.125em;
-    &:last-child{
-        margin-right: 0px;
-    }
-}
-
-.menu__link{
-    &:hover{
-        color: @main-color;
     }
 }
