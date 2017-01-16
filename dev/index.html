@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>ResponsiveUX</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hamburger.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
         <meta name="viewport" content="width=device-width,init-scale=1">
     </head>
@@ -15,8 +17,7 @@
                     <span class="logo__caption">template</span>
                 </div>
                 <nav class="menu clear">
-                    <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
-                    <label for="hamburger-toggle" class="hamburger"></label>
+                    <button type="button" name="button" class="hamburger"></button>
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="#about" class="menu__link">About</a></li>
                         <li class="menu__list-item"><a href="#projects" class="menu__link">Projects</a></li>
