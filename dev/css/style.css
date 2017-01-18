@@ -10,22 +10,22 @@ body {
   color: #000;
   font-size: 1.6rem;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
 @media screen and (max-width: 768px) {
   html {
     font-size: 8px;
   }
+}
+/*Цвет при наведении на ссылку, задний фон баннера,
+фона гамбургера*/
+a {
+  text-decoration: none;
+  color: inherit;
 }
 @media screen and (max-width: 640px) {
   p {
     text-align: justify;
   }
 }
-/*Цвет при наведении на ссылку, задний фон баннера,
-фона гамбургера*/
 .clear:after {
   content: "";
   display: block;
@@ -41,7 +41,7 @@ a {
 .header {
   position: fixed;
   z-index: 1;
-  padding: 1.25em 0 1.5em;
+  padding: 1em 0 1.4375em;
   border-bottom: 0.375em solid #fad027;
   background-color: #fff;
   min-width: 100%;
@@ -75,7 +75,7 @@ a {
   text-align: center;
 }
 .banner__image {
-  margin-right: 3.33333333%;
+  margin-right: 3.33333%;
   vertical-align: middle;
 }
 .banner__caption {
@@ -102,14 +102,14 @@ a {
 }
 .about__description {
   float: left;
-  width: 46.83333333333333%;
+  width: 46.83333%;
   padding-left: 0.125em;
   line-height: 2.3;
 }
 .about__skills {
   margin-top: 0.125em;
   float: right;
-  width: 49.16666666666667%;
+  width: 49.16667%;
 }
 @media screen and (max-width: 640px) {
   .about__description {
@@ -177,7 +177,7 @@ a {
 }
 .menu__list {
   list-style: none;
-  margin-top: 0.75em;
+  margin-top: 0.9375em;
 }
 .menu__list-item {
   display: inline-block;
@@ -208,7 +208,9 @@ a {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
   border-top: 0.8rem solid;
   border-color: inherit;
@@ -242,14 +244,13 @@ a {
 }
 .logo {
   float: left;
-}
-.logo__title {
   font-weight: normal;
   font-size: 1.5em;
-  line-height: 0.8;
+  line-height: 1.1;
   letter-spacing: 0.0125em;
 }
 .logo__caption {
+  display: block;
   color: #0091be;
   font-size: 1.6rem;
 }
@@ -261,7 +262,7 @@ a {
   display: inline-block;
   width: 24%;
   margin-right: 0.75em;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.5em;
 }
 .project:nth-child(4n) {
   margin-right: 0;
