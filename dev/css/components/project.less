@@ -1,8 +1,8 @@
 .project{
     position: relative;
-    display: inline-block;
+    float: left;
     width: 24%;
-    margin-right: 0.75em;
+    margin-right: 1.33%;
     margin-bottom: 1.5em;
     &:nth-child(4n){
         margin-right: 0;
@@ -22,6 +22,7 @@
 }
 
 .project__lining{
+    text-align: center;
     opacity: 0;
     background-color: @main-color;
     position: absolute;
@@ -32,25 +33,18 @@
 }
 
 .project__name{
+    width: 100%;
     color: #fff;
-    vertical-align: middle;
-    &:before{
-        content: "";
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
-}
-
-@media screen and (max-width: 1220px){
-    .project{
-        width: 23%;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 640px){
     .project{
-        width: 47%;
+        width: 49%;
+        margin-right: 2%;
         &:nth-child(2n){
             margin-right: 0;
         }

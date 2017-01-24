@@ -21,6 +21,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p {
+  line-height: 2.3;
+  margin-bottom: 15px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-weight: normal;
+  line-height: 1.5;
+}
+.title_L {
+  font-size: 30px;
+}
+.title_M {
+  font-size: 24px;
+}
 @media screen and (max-width: 640px) {
   p {
     text-align: justify;
@@ -104,7 +125,6 @@ a {
   float: left;
   width: 46.83333%;
   padding-left: 0.125em;
-  line-height: 2.3;
 }
 .about__skills {
   margin-top: 0.125em;
@@ -168,7 +188,7 @@ a {
   .skill__value {
     text-shadow: #000 0px 0px 4px;
     color: #fff;
-    text-indent: 48%;
+    text-indent: 47%;
     line-height: 1.875em;
   }
 }
@@ -208,9 +228,7 @@ a {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   border-top: 0.8rem solid;
   border-color: inherit;
@@ -254,14 +272,11 @@ a {
   color: #0091be;
   font-size: 1.6rem;
 }
-.projects__content {
-  text-align: center;
-}
 .project {
   position: relative;
-  display: inline-block;
+  float: left;
   width: 24%;
-  margin-right: 0.75em;
+  margin-right: 1.33%;
   margin-bottom: 1.5em;
 }
 .project:nth-child(4n) {
@@ -278,6 +293,7 @@ a {
   height: auto;
 }
 .project__lining {
+  text-align: center;
   opacity: 0;
   background-color: #0091be;
   position: absolute;
@@ -287,25 +303,144 @@ a {
   height: 100%;
 }
 .project__name {
+  width: 100%;
   color: #fff;
-  vertical-align: middle;
-}
-.project__name:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-@media screen and (max-width: 1220px) {
-  .project {
-    width: 23%;
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 640px) {
   .project {
-    width: 47%;
+    width: 49%;
+    margin-right: 2%;
   }
   .project:nth-child(2n) {
     margin-right: 0;
   }
+}
+.blog__row {
+  margin-bottom: 2.9375em;
+}
+.article {
+  width: 48%;
+}
+.article:last-child {
+  float: right;
+}
+.article:first-child {
+  float: left;
+}
+.article_big {
+  width: 100%;
+  margin-bottom: 2.9375em;
+}
+.article_big .article__meta {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.article__img {
+  margin-bottom: 0.625em;
+}
+.article__title {
+  margin-bottom: 1.375em;
+}
+.article__data {
+  float: left;
+  font-size: 0.875em;
+  vertical-align: top;
+  text-align: center;
+  min-width: 10%;
+  margin-right: 4.861%;
+}
+.article__day {
+  line-height: 4.8rem;
+  height: 4.8rem;
+  display: block;
+  background-color: #eee;
+}
+.article__month {
+  line-height: 2.7rem;
+  height: 2.7rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  display: block;
+  background-color: #0091be;
+  color: #fff;
+}
+.article__content {
+  vertical-align: top;
+  width: auto;
+  overflow: hidden;
+}
+.article__meta {
+  font-size: 0.875em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.article__author {
+  max-width: 20%;
+  float: left;
+  background-image: url(../images/author-icon.png);
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+  padding-left: 18px;
+}
+.article__tags {
+  float: right;
+  max-width: 73%;
+}
+@media screen and (max-width: 900px) {
+  .article__tags {
+    display: none;
+  }
+  .article__author {
+    max-width: 100%;
+  }
+  .article_big .article__tags {
+    display: block;
+  }
+}
+@media screen and (max-width: 640px) {
+  .article {
+    width: 100%;
+  }
+}
+.tags__inner {
+  width: auto;
+  overflow: hidden;
+}
+.tags__label {
+  float: left;
+  background-image: url(../images/tags-icon.png);
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+  padding-left: 20px;
+  margin-right: 4px;
+}
+.tag {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 3px;
+  background-color: #0091be;
+  text-align: center;
+  color: #fff;
+}
+.map {
+  height: 450px;
+  background-image: url("../images/map.png");
+}
+.footer {
+  padding-top: 1.84375em;
+  padding-bottom: 1.84375em;
+  background-color: #3c3838;
+  color: #fff;
+  font-size: 0.875em;
+}
+.foooter__copyright {
+  float: left;
+}
+.footer__developer {
+  float: right;
 }

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>ResponsiveUX</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700">
         <meta name="viewport" content="width=device-width,init-scale=1">
     </head>
     <body>
@@ -16,8 +16,8 @@
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="#about" class="menu__link">About</a></li>
                         <li class="menu__list-item"><a href="#projects" class="menu__link">Projects</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__link">Blog</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__link">Contacts</a></li>
+                        <li class="menu__list-item"><a href="#blog" class="menu__link">Blog</a></li>
+                        <li class="menu__list-item"><a href="#map" class="menu__link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -58,14 +58,14 @@
                 </div>
             </div>
         </section>
-        <section class="section projects">
+        <section class="section">
             <div class="main-container">
                 <h2 class="section__title" id="projects">Projects</h2>
-                <div class="section__content projects__content">
+                <div class="section__content clear">
                     <a href="#" class="project">
                         <img src="images/project-img-1.jpg" class="project__img" alt="Animated alert">
                         <div class="project__lining">
-                            <span class="project__name">Animated alert</span>
+                            <span class="project__name">Animated alert and something text to get multiline caption</span>
                         </div>
                     </a>
                     <a href="#" class="project">
@@ -137,7 +137,105 @@
                 </div>
             </div>
         </section>
+        <section class="section" id="blog">
+            <div class="main-container">
+                <h2 class="section__title">Blog</h2>
+                <div class="section__content clear">
+                    <article class="article article_big">
+                        <img src="images/blog-img-1.jpg" alt="Article preview" class="article__img">
+                        <h3 class="title title_L article__title">
+                            <a href="#">Magic layout - JQuery plugin for animate blocks</a>
+                        </h3>
+                        <div class="article__body clear">
+                            <div class="article__data">
+                                <span class="article__day">15</span>
+                                <span class="article__month">May</span>
+                            </div>
+                            <div class="article__content">
+                                <p>I recently decided to update my website with portfolio. I wanted to create something memorable and spectacular. I had the idea to make an animation of all basic blocks, every block had to come through animation. The result is this. But I decided that this approach is suitable for a variety of websites and decided to make a simple JQuery-plugin. I want to tell about it.</p>
+                            </div>
+                        </div>
+                        <div class="article__meta clear">
+                            <span class="article__author">Stas Melnikov</span>
+                            <div class="article__tags tags">
+                                <span class="tags__label">Tags:</span>
+                                <div class="tags__inner">
+                                    <span class="tag">Open-Source</span>
+                                    <span class="tag">jQuery</span>
+                                    <span class="tag">Animation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="blog__row clear">
+                        <article class="article">
+                            <img src="images/blog-img-1.jpg" alt="Article preview" class="article__img">
+                            <div class="article__meta clear">
+                                <span class="article__author">Alexander Djumanashwili</span>
+                                <div class="article__tags tags">
+                                    <span class="tags__label">Tags:</span>
+                                    <div class="tags__inner">
+                                        <span class="tag">Open-Source</span>
+                                        <span class="tag">jQuery</span>
+                                        <span class="tag">Front-end</span>
+                                        <span class="tag">CSS3</span>
+                                        <span class="tag">Bootstrap</span>
+                                        <span class="tag">Material Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="title title_M article__title">
+                                <a href="#">Library-of-plugins is a collection of ready-made decisions for front-end development</a>
+                            </h3>
+                            <div class="article__body clear">
+                                <div class="article__data">
+                                    <span class="article__day">15</span>
+                                    <span class="article__month">September</span>
+                                </div>
+                                <div class="article__content">
+                                    <p>They will help you to faster your development, to add functionality and to decorate the interface. It is ok for beginners and professionals. I hope this collection will help you. If you have any questions you can connect with me to social networks.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <img src="images/blog-img-1.jpg" alt="Article preview" class="article__img">
+                            <div class="article__meta clear">
+                                <span class="article__author">Stas Melnikov</span>
+                                <div class="article__tags tags">
+                                    <span class="tags__label">Tags:</span>
+                                    <div class="tags__inner">
+                                        <span class="tag">Bootstrap</span>
+                                        <span class="tag">Material Design</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="title title_M article__title">
+                                <a href="#">Material design for Bootstrap 3</a>
+                            </h3>
+                            <div class="article__body clear">
+                                <div class="article__data">
+                                    <span class="article__day">15</span>
+                                    <span class="article__month">May</span>
+                                </div>
+                                <div class="article__content">
+                                    <p>Material Design Bootstrap 3. Today we review Material Design Bootstrap 3 theme. This theme is a new skin for your website, in case if your website is built with the Bootstrap framework 3. The theme doesn’t affect the Bootstrap core. For ease of use – LESS/SASS version is provided. The standard class names are not changed, for maximum compatibility with the framework.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map" id="map"></div>
+        <footer class="footer">
+            <div class="main-container">
+                <span class="footer__copyright">© 2017 All right reserved</span>
+                <span class="footer__developer">Developed by Alex Zabenko</span>
+            </div>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/hamburger.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT22cHmjQDzBMAR2n92vSevnRqTH16dts&callback=initMap"></script>
+        <script src="js/map.js"></script>
     </body>
 </html>
